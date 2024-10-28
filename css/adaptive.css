@@ -1,6 +1,23 @@
-@media screen and (max-width: 1323px) {
-    .slider .container-xxl {
+@media screen and (max-width: 1399px) {
+    .banner {
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .slider {
         padding-right: 12px!important;
         padding-left: 12px!important;
+    }
+    .banner {
+        height: 320px;
+    }
+
+    .slick-next.slick-arrow {
+        right: 26px;
+    }
+
+    .slick-prev.slick-arrow {
+        left: 26px;
     }
 }

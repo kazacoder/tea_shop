@@ -1,7 +1,24 @@
-
 body {
-    /*background: #0dcaf0*/
     font-family: Arial, sans-serif;
+}
+
+.banner {
+    height: 640px;
+    width: 1320px;
+}
+
+.banner.banner_1 {
+    background: url("../images/banner_1.png") no-repeat center right fixed;
+}
+
+.banner.banner_2 {
+    background: url("../images/banner_2.png") no-repeat center right fixed;
+
+}
+
+.banner.banner_3 {
+    background: url("../images/banner_3.png") no-repeat center right fixed;
+
 }
 
 .slick-arrow {
@@ -15,7 +32,6 @@ body {
     justify-content: center;
 }
 
-
 .slick-next.slick-arrow {
     right: 16px;
 }
@@ -28,33 +44,18 @@ body {
 .slick-arrow::before {
     display: inline-block;
     content: '';
-    width: 14px;
-    height: 14px;
-    border-bottom: 4px solid #595555;
-    border-right: 4px solid #595555;
-    border-radius: 3px;
-    color:#595555;
-    box-sizing: border-box;
-}
-
-.slick-arrow.slick-next::before {
-    transform: rotate(-45deg);
-    margin-right: 4px;
+    width: 100%;
+    height: 100%;
+    background: url("../images/icons/caret-right.svg") center no-repeat;
 }
 
 .slick-arrow.slick-prev::before {
-    transform: rotate(135deg);
-    margin-left: 4px;
-}
-
-
-.ui-state-default,
-.ui-button.ui-state-disabled:active {
-    color: white;
+    transform: rotate(180deg);
 }
 
 #accordion > h3 {
     margin: 8px 0;
+    transition: margin 0.1s linear;
 }
 
 #accordion > h3:first-child {
@@ -64,15 +65,20 @@ body {
     margin-bottom: 0;
 }
 
+.ui-state-default,
+.ui-button.ui-state-disabled:active {
+    color: white;
+}
+
 .ui-icon.custom-icon-caret-up {
-    background: url("../images/icons/caret-up.png");
+    background: url("../images/icons/caret-up.svg");
     height: 20px;
     min-width: 20px;
     display: inline-block;
 }
 
 .ui-icon.custom-icon-caret-down {
-    background: url("../images/icons/caret-down.png");
+    background: url("../images/icons/caret-down.svg");
     height: 20px;
     min-width: 20px;
     display: inline-block;

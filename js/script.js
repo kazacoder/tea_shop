@@ -5,6 +5,23 @@ $(document).ready(function () {
         speed: 500,
         fade: true,
         cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 1400,
+             },
+            {
+                breakpoint: 1200,
+            },
+            {
+                breakpoint: 992,
+              },
+            {
+                breakpoint: 768,
+              },
+            {
+                breakpoint: 576,
+              },
+         ]
 
     });
     var icons = {
