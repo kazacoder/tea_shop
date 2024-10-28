@@ -76,4 +76,8 @@ $(document).ready(function () {
         heightStyle: "content"
     });
 
+    $('.product-image').magnificPopup({
+        type: 'image',
+    });
+
 })
