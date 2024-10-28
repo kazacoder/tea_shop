@@ -1,6 +1,7 @@
 
 body {
     /*background: #0dcaf0*/
+    font-family: Arial, sans-serif;
 }
 
 .slick-arrow {
@@ -52,3 +53,27 @@ body {
     color: white;
 }
 
+#accordion > h3 {
+    margin: 8px 0;
+}
+
+#accordion > h3:first-child {
+    margin-top: 0;
+}
+#accordion > .ui-accordion-header-collapsed:last-of-type {
+    margin-bottom: 0;
+}
+
+.ui-icon.custom-icon-caret-up {
+    background: url("../images/icons/caret-up.png");
+    height: 20px;
+    min-width: 20px;
+    display: inline-block;
+}
+
+.ui-icon.custom-icon-caret-down {
+    background: url("../images/icons/caret-down.png");
+    height: 20px;
+    min-width: 20px;
+    display: inline-block;
+}

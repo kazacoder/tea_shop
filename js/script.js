@@ -8,8 +8,8 @@ $(document).ready(function () {
 
     });
     var icons = {
-        header: "ui-icon-circle-arrow-e",
-        activeHeader: "ui-icon-circle-arrow-s"
+        header: "custom-icon-caret-down",
+        activeHeader: "custom-icon-caret-up"
     };
     $( "#accordion" ).accordion({
         icons: icons,
@@ -48,5 +48,9 @@ $(document).ready(function () {
     $('#phone').inputmask({"mask": "(999) 999-9999"});
     $('#zipCode').inputmask({"mask": "999999"});
 
+
+    $( "#accordion2" ).accordion({
+        heightStyle: "content"
+    });
 
 })

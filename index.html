@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea shop</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="lib/slick/slick.css">
     <link rel="stylesheet" href="lib/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="lib/jquery_ui/jquery-ui.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
 </head>
@@ -36,7 +36,7 @@
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Поиск чая" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Найти</button>
+                <button class="btn btn-outline-primary px-2 px-sm-4" type="submit">Найти</button>
             </form>
         </div>
     </div>
@@ -132,25 +132,33 @@
         <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-9 col-sm-10">
                 <div class='h2 fw-bold mb-5 mt-4 text-center'>Ответы на часто задаваемые вопросы</div>
-                <div id="accordion" class="d-flex flex-column gap-3">
-                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3">Собираете ли вы подарочные
-                        боксы?</h3>
-                    <div class="p-4 bg-transparent border border-0">
+                <div id="accordion" class="d-flex flex-column">
+                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3 d-flex flex-row-reverse justify-content-between">
+                        <span>Собираете ли вы подарочные боксы?</span>
+                    </h3>
+                    <div class="bg-transparent border border-0 px-4">
                         Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и
                         стоимость!
                     </div>
-                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3">Сколько у вас разновидностей
+                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3 d-flex flex-row-reverse justify-content-between">Сколько у вас разновидностей
                         чая?</h3>
-                    <div class="p-4 bg-transparent border border-0">Много дописать</div>
-                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3">В какой срок осуществляется
+                    <div class="bg-transparent border border-0 px-4">
+                        На данный момент у нас в ассортименте более 40 разновидностей чая и мы по постоянно пополняем
+                        коллекции
+                    </div>
+                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3 d-flex flex-row-reverse justify-content-between">В какой срок осуществляется
                         доставка?</h3>
-                    <div class="p-4 bg-transparent border border-0">Мгновенно</div>
-                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3">У вас обновляется
+                    <div class="bg-transparent border border-0 px-4">Доставка занимает в среднем 3 дня с момента оплаты,
+                        максимальный срок доставки - 7 дней
+                    </div>
+                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3 d-flex flex-row-reverse justify-content-between">У вас обновляется
                         ассортимент?</h3>
-                    <div class="p-4 bg-transparent border border-0">Постоянно</div>
-                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3">Какого объема у вас пачки
+                    <div class="bg-transparent border border-0 px-4">Да, мы регулярно пополняем наш ассортимент</div>
+                    <h3 class="bg-primary p-4 fw-bold border border-primary rounded-3 d-flex flex-row-reverse justify-content-between">Какого объема у вас пачки
                         чая?</h3>
-                    <div class="p-4 bg-transparent border border-0">Разного</div>
+                    <div class="bg-transparent border border-0 px-4">Готовые пачки рассыпного чая 50 г, 100 г. и 200 г. Пачки
+                        с чайными пакетами по 25, 50 и 100 пакетиков.
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,16 +219,15 @@
     </div>
 </section>
 
-
 <footer class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">Все права защищены</div>
 </footer>
 
-<script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/bootstrap.bundle.js"></script>
+<script src="lib/jquery/jquery-3.7.1.min.js"></script>
+<script src="lib/jquery_ui/jquery-ui.min.js"></script>
+<script src="lib/bootstrap/bootstrap.bundle.js"></script>
 <script src="lib/slick/slick.min.js"></script>
-<script src="js/jquery.inputmask.min.js"></script>
+<script src="lib/input_mask/jquery.inputmask.min.js"></script>
 
 <script src="js/script.js"></script>
 </body>
