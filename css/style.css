@@ -9,15 +9,18 @@ body {
 
 .banner.banner_1 {
     background: url("../images/banner_1.png") no-repeat center right fixed;
+    background-size: cover;
 }
 
 .banner.banner_2 {
     background: url("../images/banner_2.png") no-repeat center right fixed;
+    background-size: cover;
 
 }
 
 .banner.banner_3 {
     background: url("../images/banner_3.png") no-repeat center right fixed;
+    background-size: cover;
 
 }
 

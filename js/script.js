@@ -19,7 +19,13 @@ $(document).ready(function () {
                 breakpoint: 768,
               },
             {
-                breakpoint: 576,
+                breakpoint: 425,
+              },
+            {
+                breakpoint: 375,
+              },
+            {
+                breakpoint: 320,
               },
          ]
 
