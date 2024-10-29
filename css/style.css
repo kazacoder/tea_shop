@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Banners styles */
 .banner {
     height: 640px;
     width: 1320px;
@@ -24,6 +25,7 @@ body {
 
 }
 
+/* Slick slider styles override */
 .slick-arrow {
     width: 40px;
     height: 40px;
@@ -56,6 +58,7 @@ body {
     transform: rotate(180deg);
 }
 
+/* JQueryUI Accordion styles customizing: gap, icons, etc. */
 #accordion > h3 {
     margin: 8px 0;
     transition: margin 0.1s linear;
@@ -87,3 +90,13 @@ body {
     display: inline-block;
 }
 
+.hvr-grow:before {
+    background: #032c6c;
+    border-radius: 5px;
+}
+
+
+/* .btr transition transform override to avoid text jumping*/
+.btn {
+    transition: transform 0.3s linear;
+}

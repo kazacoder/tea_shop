@@ -25,6 +25,9 @@
     }
 }
 
+
+/* Пришлось чуть отойти от ТЗ и добавить немного стилей, иначе текст
+   в слайдере нечитаемый получается на адаптиве */
 @media screen and (max-width: 991px) {
     .banner_3 .highlighted-text {
         -webkit-text-stroke: 1px #ebe7e1;
@@ -34,10 +37,6 @@
     .banner_2 .highlighted-text {
         -webkit-text-stroke: 1px #84a4cf;
         color: #052c65;
-    }
-
-    .stroked-text {
-        -webkit-text-stroke: 1px #84a4cf;
     }
 }
 

@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    // slick slider init + settings
     $('.slider').slick({
         dots: false,
         infinite: true,
@@ -6,47 +8,32 @@ $(document).ready(function () {
         fade: true,
         cssEase: 'linear',
         responsive: [
-            {
-                breakpoint: 1400,
-             },
-            {
-                breakpoint: 1200,
-            },
-            {
-                breakpoint: 992,
-              },
-            {
-                breakpoint: 768,
-              },
-            {
-                breakpoint: 425,
-              },
-            {
-                breakpoint: 375,
-              },
-            {
-                breakpoint: 320,
-              },
-         ]
+            {breakpoint: 1400,},
+            {breakpoint: 1200,},
+            {breakpoint: 992,},
+            {breakpoint: 768,},
+            {breakpoint: 425,},
+            {breakpoint: 375,},
+            {breakpoint: 320,},
+        ]
 
     });
-    var icons = {
+
+
+    // JQueryUI accordion init and customizing
+    let icons = {
         header: "custom-icon-caret-down",
         activeHeader: "custom-icon-caret-up"
     };
-    $( "#accordion" ).accordion({
+
+    $("#accordion").accordion({
         icons: icons,
         heightStyle: "content"
-
-    });
-    $( "#toggle" ).button().on( "click", function() {
-        if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
-            $( "#accordion" ).accordion( "option", "icons", null );
-        } else {
-            $( "#accordion" ).accordion( "option", "icons", icons );
-        }
     });
 
+
+    // Form verifying
+    // NEED TO UPGRADE!!!!
     (() => {
         'use strict'
 
@@ -60,22 +47,18 @@ $(document).ready(function () {
                     event.preventDefault()
                     event.stopPropagation()
                 }
-
                 form.classList.add('was-validated')
             }, false)
         })
     })()
 
 
-
+    // Input Mask applying for phone and zipcode inputs
     $('#phone').inputmask({"mask": "(999) 999-9999"});
     $('#zipCode').inputmask({"mask": "999999"});
 
 
-    $( "#accordion2" ).accordion({
-        heightStyle: "content"
-    });
-
+    // PopUp init + customizing
     $('.product-image').magnificPopup({
         type: 'image',
         tClose: 'Закрыть (Esc)',
@@ -85,6 +68,8 @@ $(document).ready(function () {
         tLoading: 'Загрузка...'
     });
 
+
+    // WowJS init + settings
     let wow = new WOW({
         boxClass: 'wow',
         animateClass: 'animate__animated',
@@ -93,5 +78,7 @@ $(document).ready(function () {
         live: true
     })
     wow.init();
+
+    $('.btn').addClass('hvr-grow').addClass('hvr-sweep-to-right')
 
 })
