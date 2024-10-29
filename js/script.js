@@ -78,6 +78,11 @@ $(document).ready(function () {
 
     $('.product-image').magnificPopup({
         type: 'image',
+        tClose: 'Закрыть (Esc)',
+        image: {
+            tError: 'Изображение недоступно.'
+        },
+        tLoading: 'Загрузка...'
     });
 
 })

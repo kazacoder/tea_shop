@@ -5,7 +5,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
     .banner {
         height: 480px;
         background-size: cover;
@@ -13,10 +12,6 @@
 }
 
 @media screen and (max-width: 575px) {
-    /*.slider {*/
-    /*    padding-right: 12px!important;*/
-    /*    padding-left: 12px!important;*/
-    /*}*/
     .banner {
         height: 320px;
     }
@@ -29,3 +24,22 @@
         left: 10px;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .banner_3 .highlighted-text {
+        -webkit-text-stroke: 1px #ebe7e1;
+        color: #e42027;
+    }
+
+    .banner_2 .highlighted-text {
+        -webkit-text-stroke: 1px #84a4cf;
+        color: #052c65;
+    }
+
+    .stroked-text {
+        -webkit-text-stroke: 1px #84a4cf;
+    }
+}
+
+
+
